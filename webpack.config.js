@@ -12,18 +12,6 @@ module.exports = {
       "./src/cra-app/craDirective.js"
     ]
   },
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules)/,
-        loader: "babel-loader",
-        query: {
-          presets: ["es2015", "stage-0", "react"]
-        }
-      }
-    ]
-  },
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/dist/",
